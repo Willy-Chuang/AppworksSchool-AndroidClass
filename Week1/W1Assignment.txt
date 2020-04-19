@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg950\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10680\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Q1 . \
+	a: val id = 9527\
+		Ans: Correct\
+\
+\
+	b: var number : Int = 5.6\
+		Ans: Incorrect\
+			Int stands for integer, for instance, 5.6 isn\'92t an integer\
+\
+	\
+	c: var title = \'93Hello Kotlin!\'94\
+		Ans: Correct\
+\
+\
+	d: val content : String = null\
+		Ans: Incorrect\
+			Kotlin is a null safe language, by default, types can\'92t be null, however if we add \'93?\'94 			to the type, then the variable can be nullable. (val content : String? = null)\
+\
+\
+	e: val number : Double? =556.6\
+		Ans: Correct\
+\
+\
+	f: var list : List<String>? = listof(null, null)\
+		Ans: Incorrect\
+			String could not be null, so it should be List<String?>, the question mark was 			misplaced, which meant to make the List nullable but not the parameter.\
+\
+	g: var list: List<String?>? = listOf(\'93Wayne\'94, \'93Chen\'94)\
+		Ans: Correct\
+\
+\
+	h: list.size\
+		Ans: Correct\
+\
+\
+	i: list?.size\
+		Ans: Incorrect\
+			A list is never null, the variables within might be null, but the list itself is not null. Not 			to mention, we are talking about size here. \
+\
+Q2.\
+	Ans: C \'93Your grace.\'94\
+\
+	Why: the message length is 39 in total, according to the when expression, different strings will 	be returned, due to the difference between the length of message, in that case, \'93Your grace.\'94 	will be the answer1..39 -> println(\'93Your grace.\'94) .\
+\
+\
+Q3.\
+	Ans: D \'93val array = Array(6) \{1000.0pow(it)\}\'94\
+\
+	Why: Since it\'92s an array of 6 and the result is 1000^0, 1000^1, 1000^2\'85etc, so the equation 	should goes like this 1000^x x= 0~5\
+	}
