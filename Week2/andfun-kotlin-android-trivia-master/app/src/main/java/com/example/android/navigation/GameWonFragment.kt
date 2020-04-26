@@ -45,6 +45,7 @@ class GameWonFragment : Fragment() {
         binding.nextMatchButton.setOnClickListener { view: View ->
             view.findNavController().navigate(
                     GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
+
         }
         setHasOptionsMenu(true)
         return binding.root
