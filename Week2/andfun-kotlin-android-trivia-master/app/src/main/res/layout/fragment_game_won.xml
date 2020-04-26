@@ -56,7 +56,7 @@
             app:srcCompat="@drawable/you_win" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/profilebutton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="9dp"
