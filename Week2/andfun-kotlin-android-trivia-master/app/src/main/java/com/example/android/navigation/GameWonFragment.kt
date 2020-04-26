@@ -45,11 +45,12 @@ class GameWonFragment : Fragment() {
         binding.nextMatchButton.setOnClickListener { view: View ->
             view.findNavController().navigate(
                     GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
+        }
         binding.profilebutton.setOnClickListener { view: View ->
             view.findNavController().navigate(
                     GameWonFragmentDirections.actionGameWonFragmentToProfileFragment())
         }
-        }
+
         setHasOptionsMenu(true)
         return binding.root
     }
