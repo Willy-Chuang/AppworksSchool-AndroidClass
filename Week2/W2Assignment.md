@@ -28,7 +28,7 @@ ArrayList 是使用數組的方式呈現，而 LinkedList 則是使用鍊表的�
 
 ##### 5.What are ​**Value Type**​ variables? List out the Value Type variables you know.
 
-A data type which holds content in its memory, meaning the variables directly contain their value.EX: Int?
+A data type which holds content in its memory, meaning the variables directly contain their value.EX: byte, short, int, long, float, double, boolean, char
 
 ##### 6.What’s the **​maximum**​ value of **​Int**​? If you want to represent integers larger than the limit, what should you do instead of using int variables?
 
