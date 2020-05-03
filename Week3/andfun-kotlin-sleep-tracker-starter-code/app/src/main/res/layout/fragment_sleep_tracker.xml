@@ -92,7 +92,7 @@
             app:layout_constraintStart_toEndOf="@+id/start_button"
             app:layout_constraintTop_toTopOf="parent"
             android:onClick="@{() -> sleepTrackerViewModel.onStopTracking() }"
-            android:enable="@{sleepTrackerViewModel.stopButtonVisible}"/>
+            android:enabled="@{sleepTrackerViewModel.stopButtonVisible}"/>
 
         <Button
             android:id="@+id/clear_button"
@@ -107,7 +107,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:onClick="@{() -> sleepTrackerViewModel.onClear()}"
-            android:enable="@{sleepTrackerViewModel.clearButtonVisible}"/>
+            android:enabled="@{sleepTrackerViewModel.clearButtonVisible}"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
