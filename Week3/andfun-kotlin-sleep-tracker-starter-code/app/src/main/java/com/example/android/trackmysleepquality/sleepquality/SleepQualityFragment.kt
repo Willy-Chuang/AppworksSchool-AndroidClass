@@ -17,6 +17,8 @@
 package com.example.android.trackmysleepquality.sleepquality
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -68,6 +70,18 @@ class SleepQualityFragment : Fragment() {
                 this.findNavController().navigate(
                         SleepQualityFragmentDirections.actionSleepQualityFragmentToSleepTrackerFragment())
                 sleepQualityViewModel.doneNavigating()
+            }
+        })
+
+        binding.editText.addTextChangedListener(object : TextWatcher{
+            override fun afterTextChanged(info: Editable?) {
+            }
+
+            override fun beforeTextChanged(info: CharSequence?, start: Int, before: Int, count: Int) {
+            }
+
+            override fun onTextChanged(info: CharSequence?, start: Int, before: Int, count: Int) {
+                sleepQualityViewModel.sleepInfo= info.toString()
             }
         })
 
