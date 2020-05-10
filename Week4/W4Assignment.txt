@@ -1,0 +1,91 @@
+### AppWorks School Android Class Remote Assignment W4
+
+##### 1.What is ​Polymorphism​? Try to explain in Mandarin.
+
+多型是指當一個方法會因為不同的接收者而有不同的行為或型態
+
+例如： 利用一個泛型將接收不同的 type, 而且收到的可能會有 String, Int...等，當要使用時則會因為 type 的不同而造成不同的結果
+
+
+##### 2.Here are the 7 important lifecycle methods of an ​Activity​:
+
+###### i.onCreate()
+
+When the activity is initializing. This stage will only go through once when an app in running. Also, we are able to retrieve the past data on this stage.
+
+###### ii.onStart()
+
+Start objects that only run when activity on screen
+
+###### iii.onResume()
+
+When the interface became interactive.
+
+###### iv.onPause()
+
+Block UI from drawing. Happens when Home button, Switch button is pressed and even phone calls.
+
+###### v.onStop()
+
+Stop objects that only run when activity on screen; can also save data.
+
+###### vi.onDestroy()
+
+When the activity is shut down completely
+
+###### vii.onRestart()
+
+Can be call ONLY IF the app was already created. Anything that runs only if not being "created".
+
+##### 3. What is the Android Jetpack?
+
+Android Jetpack is a compact of library, tools and guidance to help developer to write a more clean and high-quality code. Developers are able to imply the tools when needed through the build.grade file. 
+
+##### 4. Key concepts in ​Android Development​: Try to research them and explain briefly.
+
+###### i.Activity
+
+Activity is a focused action that allows users to interact with the UI, it is controlled by lifecycle in Android, in order to manage the different behavior in different stages.
+
+###### ii.Service
+
+Service is an application component that is representing a long-running operation, and it is usually NOT interactive with the user.
+
+###### iii.Content Provider
+
+Content provider allows us to shift data between apps.
+
+###### iv.Broadcast Receiver
+
+Used to accept the events on system or apps, ex: Battery life, or is it on flight mode.
+Thus, developers could make certain methods to the status.
+
+###### v.Notification
+
+Notification allows us to give the user a heads up within the status bar(Even if the app is closed)
+
+###### vi.Runtime Permission
+
+It is very important to get the access to users permission to certain functions. When runtime, we are able to reassure if the user is currently in the state of agree.
+
+###### vii.ANR
+
+ANR stands for Application Not Responding, this may trigger when the UI thread of an app is blocked for too long. The ANR dialog gives the user the opportunity to force quit the app.
+
+###### viii.OOM
+
+OOM stands for Out Of Memory, this may trigger when JVM is no longer available to distribute RAM to a new object. On the mean time, the most used RAM will be cleared and so does the ones that are hardly been used.
+
+###### ix.Exception
+
+An exception is an unwanted or unexpected event, which occurs during the execution of a program i.e at run time, that disrupts the normal flow of the program’s instructions. Exception handling is a technique, using which we can handle errors and prevent run time crashes that can stop our program.
+
+
+
+###### x.Material Design
+
+A guideline established by google, making a more consistent and user friendly interface. Including, margin, font  style, button, hierarchy, actions and animation. In material design they even provide a certain amount of icons for developers to use. 
+
+##### 5.What is Coroutines? Why we use it? Try to explain in Mandarin.
+
+在一個函式中正常會依序(A,B,C)去執行處理，但可能 A 的執行時間較舊（需要等待其他的 data導入），因此會影響到整個畫面的產生（可能會造成 Timeout...等），這時我們就可以利用 Coroutine 來解決。 Coroutine 讓我們可以在一個立定的 Scope 內進行對可以被延後的 function 進行調用(Dispatch)，就上述例子，我們可以在 A 等待data導入的期間先執行 B,C。
