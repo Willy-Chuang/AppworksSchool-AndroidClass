@@ -102,7 +102,7 @@ class PhotoGridAdapter( val clickListener: MarsPropertyListener ) :
         companion object {
             fun from(parent: ViewGroup): MarsPropertyViewHolder {
                 val layoutInflater = LayoutInflater.from(parent.context)
-                val view = NewPropertyBinding.inflate(layoutInflater)
+                val view = NewPropertyBinding.inflate(layoutInflater, parent, false)
                 return MarsPropertyViewHolder(view)
             }
         }
