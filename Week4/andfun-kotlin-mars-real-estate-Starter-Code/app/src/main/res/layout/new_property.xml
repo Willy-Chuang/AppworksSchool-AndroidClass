@@ -19,7 +19,7 @@ android:orientation="vertical">
 
 <ImageView
     android:id="@+id/mars_image"
-    android:layout_width="0dp"
+    android:layout_width="match_parent"
     android:layout_height="150dp"
     android:layout_marginStart="16dp"
     android:layout_marginTop="8dp"
@@ -28,7 +28,6 @@ android:orientation="vertical">
     android:scaleType="centerCrop"
     app:imageUrl="@{property.imgSrcUrl}"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     tools:srcCompat="@tools:sample/backgrounds/scenic" />
@@ -38,7 +37,7 @@ android:orientation="vertical">
     android:layout_width="0dp"
     android:layout_height="20dp"
     android:layout_marginTop="8dp"
-    android:text="@{property.type}"
+    android:text="@{property.getType}"
     app:layout_constraintStart_toStartOf="@+id/mars_image"
     app:layout_constraintTop_toBottomOf="@+id/mars_image" />
 
@@ -51,7 +50,7 @@ android:orientation="vertical">
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintStart_toStartOf="@+id/purpose_string"
     app:layout_constraintTop_toBottomOf="@+id/purpose_string"
-    tools:text="@{property.formattedPrice}" />
+    tools:text="@{property.getPrice}" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
     </layout>

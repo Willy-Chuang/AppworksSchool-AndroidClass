@@ -30,6 +30,13 @@ data class MarsProperty(
     val isRental
         get() = type == "rent"
 
-    val formattedPrice
-        get()=price.toString()
+    val getType = when(type){
+        "rent" -> "For Rent"
+        else -> "For Sale"
+    }
+
+    val getPrice = when(type){
+        "rent" -> "$${price.toLong()}/month"
+        else -> "$${price.toLong()}"
+    }
 }
